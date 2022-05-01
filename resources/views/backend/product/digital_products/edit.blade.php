@@ -61,7 +61,7 @@
 		                        </select>
 							</div>
 						</div>
-						<div class="form-group row">
+						{{-- <div class="form-group row">
 							<label class="col-lg-2 col-from-label">{{translate('Product File')}}</label>
 							<div class="col-lg-8">
 				                <div class="input-group" data-toggle="aizuploader" data-multiple="false">
@@ -74,7 +74,7 @@
 				                <div class="file-preview box sm">
 				                </div>
 							</div>
-						</div>
+						</div> --}}
 						<div class="form-group row">
 							<label class="col-lg-2 col-from-label">{{translate('Tags')}}</label>
 							<div class="col-lg-8">
