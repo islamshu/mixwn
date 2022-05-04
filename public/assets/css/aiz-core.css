@@ -8660,7 +8660,7 @@ input[type="number"] {
 .btn {
     padding: 0.6rem 1.2rem;
     font-size: 0.875rem;
-    color: #2a3242;
+    color: #2a3242 !important;
     font-weight: inherit;
 }
 .btn-shadow:hover {
@@ -8718,7 +8718,7 @@ input[type="number"] {
 .btn-primary,
 .btn-soft-primary:hover,
 .btn-outline-primary:hover {
-    background-color: var(--primary);
+    background-color: #ffc009;
     border-color: var(--primary);
     color: var(--white);
 }
@@ -18048,7 +18048,7 @@ input[type="number"] {
 .btn {
     padding: 0.6rem 1.2rem;
     font-size: 0.875rem;
-    color: #2a3242;
+    color: #2a3242 !important;
     font-weight: inherit;
 }
 .btn-shadow:hover {
@@ -18109,7 +18109,7 @@ input[type="number"] {
 .btn-primary,
 .btn-soft-primary:hover,
 .btn-outline-primary:hover {
-    background-color: var(--primary);
+    background-color:#ffc009;
     border-color: var(--primary);
     color: var(--white);
 }
@@ -18160,7 +18160,7 @@ input[type="number"] {
     color: var(--white);
 }
 .btn-link {
-    color: var(--primary);
+    color: var(--primary) !important;
 }
 .btn-link:hover {
     color: var(--hov-primary);
@@ -19880,4 +19880,7 @@ a {
 }
 label {
     color: #D2973D !important;
+}
+color: #D2973D !important;
+
 }
