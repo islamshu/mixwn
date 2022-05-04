@@ -627,6 +627,7 @@ fixed-bottom 1030*/
 }
 
 .opacity-50 {
+    color: white !important;
     opacity: 2.5 !important;
 }
 
@@ -11033,6 +11034,7 @@ fixed-bottom 1030*/
     opacity: 0.4 !important;
 }
 .opacity-50 {
+    color: white !important;
     opacity: 2.5 !important;
 }
 .opacity-60 {
