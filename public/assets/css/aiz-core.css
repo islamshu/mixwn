@@ -671,6 +671,7 @@ fixed-bottom 1030*/
 }
 
 .hov-opacity-50:hover {
+    color: white;
     opacity: 2.5 !important;
 }
 
@@ -11065,6 +11066,7 @@ fixed-bottom 1030*/
     opacity: 0.4 !important;
 }
 .hov-opacity-50:hover {
+    color: white;
     opacity: 2.5 !important;
 }
 .hov-opacity-60:hover {
