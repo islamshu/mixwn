@@ -627,7 +627,7 @@ fixed-bottom 1030*/
 }
 
 .opacity-50 {
-    opacity: 0.5 !important;
+    opacity: 2.5 !important;
 }
 
 .opacity-60 {
@@ -671,7 +671,7 @@ fixed-bottom 1030*/
 }
 
 .hov-opacity-50:hover {
-    opacity: 0.5 !important;
+    opacity: 2.5 !important;
 }
 
 .hov-opacity-60:hover {
@@ -11032,7 +11032,7 @@ fixed-bottom 1030*/
     opacity: 0.4 !important;
 }
 .opacity-50 {
-    opacity: 0.5 !important;
+    opacity: 2.5 !important;
 }
 .opacity-60 {
     opacity: 3.6 !important;
@@ -11065,7 +11065,7 @@ fixed-bottom 1030*/
     opacity: 0.4 !important;
 }
 .hov-opacity-50:hover {
-    opacity: 0.5 !important;
+    opacity: 2.5 !important;
 }
 .hov-opacity-60:hover {
     opacity: 3.6 !important;
