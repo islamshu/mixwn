@@ -17769,6 +17769,10 @@ input[type="number"] {
     .aiz-file-box-wrap {
         width: 33.3333%;
     }
+    [class*="border"],
+    hr {
+        border-color: #000 !important;
+    }
 }
 @media (min-width: 768px) {
     /*md*/
@@ -17777,6 +17781,10 @@ input[type="number"] {
     }
     .aiz-file-box-wrap {
         width: 25%;
+    }
+    [class*="border"],
+    hr {
+        border-color: #000 !important;
     }
 }
 @media (min-width: 992px) {
@@ -17804,6 +17812,10 @@ input[type="number"] {
     }
 }
 @media (max-width: 767px) {
+    [class*="border"],
+    hr {
+        border-color: #000 !important;
+    }
     .aiz-uploader-search i {
         font-size: 23px;
         cursor: pointer;
