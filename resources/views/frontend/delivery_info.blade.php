@@ -21,8 +21,8 @@
                     </div>
                     <div class="col active">
                         <div class="text-center text-primary">
-                            <i class="la-3x mb-2 las la-truck"></i>
-                            <h3 class="fs-14 fw-600 d-none d-lg-block text-capitalize">{{ translate('3. Delivery info')}}</h3>
+                            <i class="la-3x mb-2 las la-truck" style="color: rgb(0, 0, 0) !important"></i>
+                            <h3 class="fs-14 fw-600 d-none d-lg-block text-capitalize" style="color: rgb(0, 0, 0) !important">{{ translate('3. Delivery info')}}</h3>
                         </div>
                     </div>
                     <div class="col">
