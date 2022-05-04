@@ -8,32 +8,32 @@
             <div class="col-xl-8 mx-auto">
                 <div class="row aiz-steps arrow-divider">
                     <div class="col active">
-                        <div class="text-center text-primary">
-                            <i class="la-3x mb-2 las la-shopping-cart"></i>
+                        <div class="text-center text-primary" >
+                            <i class="la-3x mb-2 las la-shopping-cart" style="color: black !important"></i>
                             <h3 class="fs-14 fw-600 d-none d-lg-block text-capitalize">{{ translate('1. My Cart')}}</h3>
                         </div>
                     </div>
                     <div class="col">
                         <div class="text-center">
-                            <i class="la-3x mb-2 opacity-50 las la-map"></i>
+                            <i class="la-3x mb-2 opacity-50 las la-map" style="color: black !important"></i>
                             <h3 class="fs-14 fw-600 d-none d-lg-block opacity-50 text-capitalize">{{ translate('2. Shipping info')}}</h3>
                         </div>
                     </div>
                     <div class="col">
                         <div class="text-center">
-                            <i class="la-3x mb-2 opacity-50 las la-truck"></i>
+                            <i class="la-3x mb-2 opacity-50 las la-truck" style="color: black !important"></i>
                             <h3 class="fs-14 fw-600 d-none d-lg-block opacity-50 text-capitalize">{{ translate('3. Delivery info')}}</h3>
                         </div>
                     </div>
                     <div class="col">
                         <div class="text-center">
-                            <i class="la-3x mb-2 opacity-50 las la-credit-card"></i>
+                            <i class="la-3x mb-2 opacity-50 las la-credit-card" style="color: black !important"></i>
                             <h3 class="fs-14 fw-600 d-none d-lg-block opacity-50 text-capitalize">{{ translate('4. Payment')}}</h3>
                         </div>
                     </div>
                     <div class="col">
                         <div class="text-center">
-                            <i class="la-3x mb-2 opacity-50 las la-check-circle"></i>
+                            <i class="la-3x mb-2 opacity-50 las la-check-circle" style="color: black !important"></i>
                             <h3 class="fs-14 fw-600 d-none d-lg-block opacity-50 text-capitalize">{{ translate('5. Confirmation')}}</h3>
                         </div>
                     </div>
