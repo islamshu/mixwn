@@ -26,8 +26,8 @@
                     </div>
                     <div class="col active">
                         <div class="text-center text-primary">
-                            <i class="la-3x mb-2 las la-credit-card"></i>
-                            <h3 class="fs-14 fw-600 d-none d-lg-block text-capitalize">{{ translate('4. Payment')}}</h3>
+                            <i class="la-3x mb-2 las la-credit-card" style="color: rgb(0, 0, 0) !important"></i>
+                            <h3 class="fs-14 fw-600 d-none d-lg-block text-capitalize" style="color: rgb(0, 0, 0) !important">{{ translate('4. Payment')}}</h3>
                         </div>
                     </div>
                     <div class="col">
