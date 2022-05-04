@@ -7,7 +7,7 @@
                 <h3 class="h5 fw-700 mb-0">
                     <span class="border-bottom border-primary border-width-2 pb-3 d-inline-block">{{ $category->name }}</span>
                 </h3>
-                <a href="{{ route('products.category', $category->slug) }}" class="ml-auto mr-0 btn btn-primary btn-sm shadow-md">{{ translate('Sell all') }}</a>
+                <a href="{{ route('products.category', $category->slug) }}" class="ml-auto mr-0 btn btn-primary btn-sm shadow-md">{{ translate('show all') }}</a>
             </div>
             <div class="aiz-carousel gutters-10 half-outside-arrow" data-items="6" data-xl-items="5" data-lg-items="4"  data-md-items="3" data-sm-items="2" data-xs-items="2" data-arrows='true' data-infinite='true'>
                 @foreach (filter_products(\App\Product::where('category_id',$category->id )->orderBy('num_of_sale', 'desc'))->limit(12)->get() as $key => $product)
