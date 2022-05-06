@@ -20,7 +20,7 @@
                     <div class="form-group row">
                         <label class="col-sm-3 control-label" for="background_color">{{translate('Background Color')}} <small>(Hexa-code)</small></label>
                         <div class="col-sm-9">
-                            <input type="text" placeholder="{{translate('#FFFFFF')}}" id="background_color" name="background_color" class="form-control" required>
+                            <input type="color" placeholder="{{translate('#FFFFFF')}}" id="background_color" name="background_color" class="form-control" required>
                         </div>
                     </div>
                     <div class="form-group row">
