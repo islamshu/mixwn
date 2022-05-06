@@ -44,7 +44,7 @@
                         <div class="form-group row">
                             <label class="col-md-2 col-from-label">{{translate('Password')}} <span class="text-danger">*</span></label>
                             <div class="col-md-8">
-                                <input type="text" class="form-control" name="password" placeholder="{{translate('Password')}}" required>
+                                <input type="text" class="form-control" name="password" placeholder="{{translate('Password')}}" >
                             </div>
                         </div>
 						<div class="form-group row">
