@@ -356,14 +356,14 @@
                         </div>
                     </div>
                     <div class="pt-3">
-                        <label class="aiz-checkbox">
+                        <label class="aiz-checkbox" style="color: black !important;">
                             <input type="checkbox" required id="agree_checkbox">
                             <span class="aiz-square-check"></span>
                             <span>{{ translate('I agree to the')}}</span>
                         </label>
-                        <a href="{{ route('terms') }}">{{ translate('terms and conditions')}}</a>,
-                        <a href="{{ route('returnpolicy') }}">{{ translate('return policy')}}</a> &
-                        <a href="{{ route('privacypolicy') }}">{{ translate('privacy policy')}}</a>
+                        <a href="{{ route('terms') }}" style="color: black !important;">{{ translate('terms and conditions')}}</a>,
+                        <a href="{{ route('returnpolicy') }}" style="color: black !important;">{{ translate('return policy')}}</a> &
+                        <a href="{{ route('privacypolicy') }}" style="color: black !important;">{{ translate('privacy policy')}}</a>
                     </div>
 
                     <div class="row align-items-center pt-3">
