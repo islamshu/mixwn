@@ -251,7 +251,6 @@ class CheckoutController extends Controller
         $array['subject'] = translate('Your order has been placed').' - '.$order->code;
         $array['from'] = env('MAIL_USERNAME');
         $array['order'] = $order;
-        dd(session()->get('shipping_info')['email']);
         Mail::to(session()->get('shipping_info')['email'])->queue(new InvoiceEmailManager($array));
         Mail::to(User::where('user_type', 'admin')->first()->email)->queue(new InvoiceEmailManager($array));
         Session::forget('owner_id');
@@ -259,6 +258,7 @@ class CheckoutController extends Controller
         Session::forget('delivery_info');
         Session::forget('coupon_id');
         Session::forget('coupon_discount');
+        Session::forget('shipping_info');
         Session::forget('club_point');
 
 
