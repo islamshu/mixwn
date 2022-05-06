@@ -17771,7 +17771,7 @@ input[type="number"] {
     }
     [class*="border"],
     hr {
-        border-color: #000 !important;
+        border-color: #D2973D !important;
     }
 }
 @media (min-width: 768px) {
@@ -17784,7 +17784,7 @@ input[type="number"] {
     }
     [class*="border"],
     hr {
-        border-color: #000 !important;
+        border-color: #D2973D !important;
     }
 }
 @media (min-width: 992px) {
@@ -17814,7 +17814,7 @@ input[type="number"] {
 @media (max-width: 767px) {
     [class*="border"],
     hr {
-        border-color: #000 !important;
+        border-color: #D2973D !important;
     }
     .aiz-uploader-search i {
         font-size: 23px;
