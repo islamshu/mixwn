@@ -119,7 +119,7 @@
             </div>
         </div>
     </div>
-    {{-- <div class="col-lg-4">
+    <div class="col-lg-4">
         <div class="card">
             <div class="card-header">
                 <h3 class="mb-0 h6 text-center">{{translate('Stripe Payment Activation')}}</h3>
@@ -128,7 +128,7 @@
                 <div class="clearfix">
                     <img   class="float-left" src="{{ static_asset('assets/img/cards/stripe.png') }}" height="30">
                     <label class="aiz-switch aiz-switch-success mb-0 float-right">
-                        <input type="checkbox" onchange="updateSettings(this, 'stripe_payment')" <?php if(\App\BusinessSetting::where('type', 'stripe_payment')->first()->value == 1) echo "checked";?>>
+                        <input type="checkbox" onchange="updateSettings(this, 'stripe_payment')" @if(\App\BusinessSetting::where('type', 'stripe_payment')->first()->value == 1)  {{ 'checked' }} @endif>
                         <span class="slider round"></span>
                     </label>
                 </div>
@@ -137,7 +137,7 @@
                 </div>
             </div>
         </div>
-    </div> --}}
+    </div>
         <div class="col-lg-4">
         <div class="card">
             <div class="card-header">
