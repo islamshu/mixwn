@@ -133,6 +133,12 @@
                                             </select>
                                         </div>
                                     </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group has-feedback">
+                                            <label class="control-label">{{ translate('Phone')}}</label>
+                                            <input type="number" lang="en" min="0" class="form-control" placeholder="{{ translate('Phone')}}" name="phone" required>
+                                        </div>
+                                    </div>
                                     {{-- <div class="col-md-6">
                                         <div class="form-group has-feedback">
                                             
@@ -144,20 +150,15 @@
                                     </div> --}}
                                 </div>
 
-                                <div class="row">
+                                {{-- <div class="row"> --}}
                                     {{-- <div class="col-md-6">
                                         <div class="form-group has-feedback">
                                             <label class="control-label">{{ translate('Postal code')}}</label>
                                             <input type="text" class="form-control" placeholder="{{ translate('Postal code')}}" name="postal_code" required>
                                         </div>
                                     </div> --}}
-                                    <div class="col-md-6">
-                                        <div class="form-group has-feedback">
-                                            <label class="control-label">{{ translate('Phone')}}</label>
-                                            <input type="number" lang="en" min="0" class="form-control" placeholder="{{ translate('Phone')}}" name="phone" required>
-                                        </div>
-                                    </div>
-                                </div>
+                                    
+                                {{-- </div> --}}
                                 <input type="hidden" name="checkout_type" value="guest">
                             </div>
                         @endif
