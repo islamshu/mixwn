@@ -470,12 +470,12 @@
 						<label class="col-md-2 col-from-label">{{translate('Top Brands (Max 10)')}}</label>
 						<div class="col-md-10">
 							<input type="hidden" name="types[]" value="top10_brands">
-							{{ dd(json_decode(get_setting('top10_brands'))) }}
 							<select name="top10_brands[]" class="form-control aiz-selectpicker" multiple data-max-options="10" data-live-search="true" >
 								@foreach (\App\Brand::all() as $key => $brand)
-								
+									@if(json_decode(get_setting('top10_brands')) != null)
 									<option value="{{ $brand->id }}" @if(in_array($brand->id, json_decode(get_setting('top10_brands')))) selected @endif>{{ $brand->getTranslation('name') }}</option>
-								@endforeach
+									@endif
+									@endforeach
 							</select>
 						</div>
 					</div>
