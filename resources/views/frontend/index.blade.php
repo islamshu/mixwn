@@ -269,7 +269,7 @@
     @endif
 
     {{-- Top 10 categories and Brands --}}
-    @if(get_setting('top10_categories') != '[]' || get_setting('top10_brands') != '[]' || get_setting('top10_categories') != null  ||  get_setting('top10_brands != null)
+    @if(get_setting('top10_categories') != '[]' || get_setting('top10_brands') != '[]' || get_setting('top10_categories') != null  ||  get_setting('top10_brands') != null )
     <section class="mb-4">
         <div class="container">
             <div class="row gutters-10">
