@@ -269,12 +269,11 @@
     @endif
 
     {{-- Top 10 categories and Brands --}}
-    {{ dd(get_setting('top10_categories')) }}
-    @if(get_setting('top10_categories') != '[]' || get_setting('top10_categories') != '[]' )
+    @if(get_setting('top10_categories') != '[]' || get_setting('top10_brands') != '[]' || get_setting('top10_categories') != null  ||  get_setting('top10_brands != null)
     <section class="mb-4">
         <div class="container">
             <div class="row gutters-10">
-                @if (get_setting('top10_categories') != '[]')
+                @if (get_setting('top10_categories') != '[]' || get_setting('top10_categories') != null )
                     <div class="col-lg-6">
                         <div class="d-flex mb-3 align-items-baseline border-bottom">
                             <h3 class="h5 fw-700 mb-0">
@@ -313,7 +312,7 @@
                         </div>
                     </div>
                 @endif
-                @if (get_setting('top10_categories') != '[]')
+                @if (get_setting('top10_brands') != '[]' || get_setting('top10_brands') != null )
                     <div class="col-lg-6">
                         <div class="d-flex mb-3 align-items-baseline border-bottom">
                             <h3 class="h5 fw-700 mb-0">
