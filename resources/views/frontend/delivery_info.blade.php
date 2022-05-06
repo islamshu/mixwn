@@ -34,7 +34,7 @@
                     <div class="col">
                         <div class="text-center">
                             <i class="la-3x mb-2 opacity-50 las la-check-circle"></i>
-                            <h3 class="fs-14 fw-600 d-none d-lg-block opacity-50 text-capitalize">{{ translate('5. Confirmation')}}</h3>
+                            <h3 class="fs-14 fw-600 d-none d-lg-block opacity-50 text-capitalize"  style="color: rgb(0, 0, 0) !important">{{ translate('5. Confirmation')}}</h3>
                         </div>
                     </div>
                 </div>
