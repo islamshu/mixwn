@@ -10,7 +10,7 @@
                     <div class="col done">
                         <div class="text-center text-success">
                             <i class="la-3x mb-2 las la-shopping-cart"></i>
-                            <h3 class="fs-14 fw-600 d-none d-lg-block text-capitalize" style="color: rgb(0, 0, 0) !important">{{ translate('1. My Cart')}}</h3>
+                            <h3 class="fs-14 fw-600 d-none d-lg-block text-capitalize" style="color: black !important" >{{ translate('1. My Cart')}}</h3>
                         </div>
                     </div>
                     <div class="col done">
