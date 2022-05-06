@@ -65,10 +65,12 @@
                         {{ translate('Contact Info') }}
                     </h4>
                     <ul class="list-unstyled">
+                        @if(get_setting('contact_address') != null)
                         <li class="mb-2">
                            <span class="d-block opacity-30">{{ translate('Address') }}:</span>
                            <span class="d-block opacity-70">{{ get_setting('contact_address') }}</span>
                         </li>
+                        @endif
                         <li class="mb-2">
                            <span class="d-block opacity-30">{{translate('Phone')}}:</span>
                            <span class="d-block opacity-70">{{ get_setting('contact_phone') }}</span>
