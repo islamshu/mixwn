@@ -8,7 +8,7 @@
                     <span class="border-bottom border-primary border-width-2 pb-3 d-inline-block">{{ $category->getTranslation('name')  }}</span>
                     <img
                     src="{{ static_asset('assets/img/placeholder.jpg') }}"
-                    data-src="{{ uploaded_asset($category->image) }}"
+                    data-src="{{ uploaded_asset($category->banner) }}"
                     alt="{{ $category->getTranslation('name') }}"
                     class="img-fluid img lazyload h-60px"
                     onerror="this.onerror=null;this.src='{{ static_asset('assets/img/placeholder-rect.jpg') }}';"
