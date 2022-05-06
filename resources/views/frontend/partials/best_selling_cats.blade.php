@@ -1,11 +1,11 @@
 
-@foreach (App\Models\Category::where('featured',1)->get() as $category)
+@foreach (App\Category::where('featured',1)->get() as $category)
 <section class="mb-4">
     <div class="container">
         <div class="px-2 py-4 px-md-4 py-md-3 bg-white shadow-sm rounded">
             <div class="d-flex mb-3 align-items-baseline border-bottom">
                 <h3 class="h5 fw-700 mb-0">
-                    <span class="border-bottom border-primary border-width-2 pb-3 d-inline-block">{{ $category->name }}</span>
+                    <span class="border-bottom border-primary border-width-2 pb-3 d-inline-block">{{ $category->getTranslation('name')  }}</span>
                     <img
                     src="{{ static_asset('assets/img/placeholder.jpg') }}"
                     data-src="{{ uploaded_asset($category->image) }}"
