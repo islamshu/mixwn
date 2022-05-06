@@ -269,7 +269,7 @@
     @endif
 
     {{-- Top 10 categories and Brands --}}
-    
+    {{ dd(get_setting('top10_categories')) }}
     @if(get_setting('top10_categories') != '[]' || get_setting('top10_categories') != '[]' )
     <section class="mb-4">
         <div class="container">
