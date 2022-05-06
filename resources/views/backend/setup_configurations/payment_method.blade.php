@@ -51,7 +51,7 @@
             </div>
         </div>
 
-        <div class="col-md-6">
+        {{-- <div class="col-md-6">
             <div class="card">
                 <div class="card-header">
                     <h5 class="mb-0 h6 ">{{translate('Stripe Credential')}}</h5>
@@ -84,7 +84,7 @@
                     </form>
                 </div>
             </div>
-        </div>
+        </div> --}}
 
     </div>
 
