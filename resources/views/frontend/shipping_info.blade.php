@@ -117,10 +117,10 @@
                                     <input type="text" class="form-control" name="email" placeholder="{{ translate('Email')}}" required>
                                 </div>
 
-                                <div class="form-group">
+                                {{-- <div class="form-group">
                                     <label class="control-label">{{ translate('Address')}}</label>
                                     <input type="text" class="form-control" name="address" placeholder="{{ translate('Address')}}" required>
-                                </div>
+                                </div> --}}
 
                                 <div class="row">
                                     <div class="col-md-6">
@@ -133,28 +133,24 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
+                                    {{-- <div class="col-md-6">
                                         <div class="form-group has-feedback">
                                             
                                             <label class="control-label">{{ translate('City')}}</label>
                                             <input type="text" name="city" class="form-control" required>
-                                            {{-- <select class="form-control aiz-selectpicker" data-live-search="true" name="city" required>
-                                                @foreach (\App\City::get() as $key => $city)
-                                                    <option value="{{ $city->name }}">{{ $city->getTranslation('name') }}</option>
-                                                @endforeach
-                                            </select> --}}
+                                     
                                             
                                         </div>
-                                    </div>
+                                    </div> --}}
                                 </div>
 
                                 <div class="row">
-                                    <div class="col-md-6">
+                                    {{-- <div class="col-md-6">
                                         <div class="form-group has-feedback">
                                             <label class="control-label">{{ translate('Postal code')}}</label>
                                             <input type="text" class="form-control" placeholder="{{ translate('Postal code')}}" name="postal_code" required>
                                         </div>
-                                    </div>
+                                    </div> --}}
                                     <div class="col-md-6">
                                         <div class="form-group has-feedback">
                                             <label class="control-label">{{ translate('Phone')}}</label>
