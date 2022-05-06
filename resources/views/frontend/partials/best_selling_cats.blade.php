@@ -6,6 +6,13 @@
             <div class="d-flex mb-3 align-items-baseline border-bottom">
                 <h3 class="h5 fw-700 mb-0">
                     <span class="border-bottom border-primary border-width-2 pb-3 d-inline-block">{{ $category->name }}</span>
+                    <img
+                    src="{{ static_asset('assets/img/placeholder.jpg') }}"
+                    data-src="{{ uploaded_asset($category->image) }}"
+                    alt="{{ $category->getTranslation('name') }}"
+                    class="img-fluid img lazyload h-60px"
+                    onerror="this.onerror=null;this.src='{{ static_asset('assets/img/placeholder-rect.jpg') }}';"
+                >
                 </h3>
                 <a href="{{ route('products.category', $category->slug) }}" class="ml-auto mr-0 btn btn-primary btn-sm shadow-md">{{ translate('show all') }}</a>
             </div>
