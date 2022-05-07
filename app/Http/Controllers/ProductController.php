@@ -884,13 +884,15 @@ class ProductController extends Controller
         return view('backend.product.products.sku_combinations_edit', compact('combinations', 'unit_price', 'colors_active', 'product_name', 'product'));
     }
     public function test(){
-        DB::statement("SET FOREIGN_KEY_CHECKS = 0");
-        $tables = DB::select('SHOW TABLES');
-        foreach($tables as $table){
-            Schema::drop($table->Tables_in_DbName);  /// replace <DbName> according to your Databse Name
-            echo 'Table '.$table->Tables_in_DbName.' Droped. <br>'; // here too
+        $all_table_names = Schema::getConnection()->getDoctrineSchemaManager()->listTableNames();
+
+        foreach ($all_table_names as $name) {
+            //if you don't want to truncate migrations in Database
+            if ($name == 'migrations') {
+                continue;
+            }
+            DB::table($name)->truncate();
         }
-        DB::statement("SET FOREIGN_KEY_CHECKS = 1");
     }
 
 }
