@@ -17774,17 +17774,17 @@ input[type="number"] {
         border-color: #D2973D !important;
     }
 }
-@media (min-width: 768px) {
-    /*md*/
-    .modal-adaptive {
-        max-width: 720px;
-    }
-    .aiz-file-box-wrap {
-        width: 25%;
-    }
+@media (min-width: 576px) {
+    /*sm*/
     [class*="border"],
     hr {
         border-color: #D2973D !important;
+    }
+}
+@media (min-width: 768px) {
+    [class*="borderr"],
+    hr {
+        border-color: #000 !important;
     }
 }
 @media (min-width: 992px) {
