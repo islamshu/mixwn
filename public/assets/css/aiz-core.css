@@ -1,4 +1,4 @@
-/*
+    /*
 
 Don't modify this file.
 use custom-style.css
@@ -19904,3 +19904,39 @@ label {
 h1 {
     color: black;
 }
+.newnew {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 25px;
+    color: #1fe8b6;
+    padding: 20px 50px;
+    border: 3px solid #1fe8b6;
+    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.newnew::before,
+.newnew::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: inherit;
+    transition: all .5s ease-in;
+}
+.newnew::before {
+    top: -15px;
+    left: -15px;
+    border-width: 3px 0 0 3px;
+}
+.newnew::after {
+    bottom: -15px;
+    right: -15px;
+    border-width: 0 3px 3px 0;
+}
+.newnew:hover::before,
+.newnew:hover::after {
+    width: calc(100% + 27px);
+    height: calc(100% + 27px);
