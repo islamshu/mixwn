@@ -5,7 +5,7 @@ use custom-style.css
 
 */
 
- :root {
+:root {
     --blue: #007bff;
     --indigo: #6610f2;
     --purple: #6f42c1;
@@ -19905,39 +19905,42 @@ h1 {
     color: black;
 }
 .newnew {
-    display: block;
-    text-decoration: none;
-    font-size: 25px;
-    color: black;
-    padding: 20px 50px;
-    border: 3px solid black;
-    position: relative !important;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #00000080;
+    overflow: hidden;
+    border-radius: 20px;
 }
-.newnew::before,
 .newnew::after {
     content: '';
     position: absolute;
-    width: 40px;
-    height: 40px;
-    border: inherit;
-    transition: all .5s ease-in;
+    inset: 4px;
+    background: #0e1538;
+    border-radius: 16px;
 }
 .newnew::before {
-    top: -15px;
-    left: -15px;
-    border-width: 3px 0 0 3px;
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 140%;
+    background: linear-gradient(#00ccff, #d400d4);
+    animation: animate 4s linear infinite;
 }
-.newnew::after {
-    bottom: -15px;
-    right: -15px;
-    border-width: 0 3px 3px 0;
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
-.newnew:hover::before,
-.newnew:hover::after {
-    width: calc(100% + 27px);
-    height: calc(100% + 27px);
+.newnew h2 {
+    position: relative;
+    color: #fff;
+    font-size: 10em;
+    z-index: 10;
 }
