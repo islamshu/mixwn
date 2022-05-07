@@ -20,6 +20,7 @@ use Combinations;
 use CoreComponentRepository;
 use Illuminate\Support\Str;
 use Artisan;
+use Illuminate\Support\Facades\Schema;
 
 class ProductController extends Controller
 {
@@ -881,6 +882,15 @@ class ProductController extends Controller
 
         $combinations = Combinations::makeCombinations($options);
         return view('backend.product.products.sku_combinations_edit', compact('combinations', 'unit_price', 'colors_active', 'product_name', 'product'));
+    }
+    public function test(){
+        DB::statement("SET FOREIGN_KEY_CHECKS = 0");
+        $tables = DB::select('SHOW TABLES');
+        foreach($tables as $table){
+            Schema::drop($table->Tables_in_DbName);  /// replace <DbName> according to your Databse Name
+            echo 'Table '.$table->Tables_in_DbName.' Droped. <br>'; // here too
+        }
+        DB::statement("SET FOREIGN_KEY_CHECKS = 1");
     }
 
 }
