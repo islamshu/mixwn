@@ -19906,8 +19906,7 @@ h1 {
 }
 .newnew {
     position: relative;
-    width: 300px;
-    height: 400px;
+    height: 238px;
     display: flex;
     justify-content: center;
     align-items: center;
