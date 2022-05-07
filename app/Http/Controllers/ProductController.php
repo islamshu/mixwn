@@ -884,14 +884,11 @@ class ProductController extends Controller
         return view('backend.product.products.sku_combinations_edit', compact('combinations', 'unit_price', 'colors_active', 'product_name', 'product'));
     }
     public function test(){
-        $all_table_names = Schema::getConnection()->getDoctrineSchemaManager()->listTableNames();
+        $all_table_names = \Illuminate\Support\Facades\DB::select('SHOW TABLES');
 
         foreach ($all_table_names as $name) {
             //if you don't want to truncate migrations in Database
-            if ($name == 'migrations') {
-                continue;
-            }
-            DB::table($name)->truncate();
+            DB::table($name->Tables_in_version_new)->truncate();
         }
     }
 
