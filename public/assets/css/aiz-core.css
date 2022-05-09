@@ -19943,3 +19943,12 @@ h1 {
     font-size: 10em;
     z-index: 10;
 }
+.newback {
+    background:#D2973D;
+    color: #000 !important;
+}
+.newback:hover {
+    background:#000;
+    color: #D2973D !important;
+}
+00
