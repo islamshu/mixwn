@@ -76,7 +76,7 @@
                                 </a>
                             </li>
                             <li class="aiz-side-nav-item">
-                                <a href="{{route('products.index')}}" class="aiz-side-nav-link {{ areActiveRoutes(['products.index', 'products.create', 'products.edit']) }}">
+                                <a href="{{route('products.admin')}}" class="aiz-side-nav-link {{ areActiveRoutes(['products.admin', 'products.create', 'products.edit']) }}">
                                     <span class="aiz-side-nav-text">{{ translate('physical Products') }}</span>
                                 </a>
                             </li>
