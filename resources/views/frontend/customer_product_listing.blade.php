@@ -159,7 +159,7 @@
                         <div class="row gutters-5 row-cols-xxl-4 row-cols-xl-3 row-cols-lg-4 row-cols-md-3 row-cols-2">
                             @foreach ($customer_products as $key => $product)
                                 <div class="col mb-2">
-                                    <div class="aiz-card-box border border-light rounded shadow-sm hov-shadow-md h-100 has-transition bg-white">
+                                    <div class="aiz-card-box box_neww borderr border-lightt rounded shadow-sm hov-shadow-md h-100 has-transition bg-white">
                                         <div class="position-relative">
                                             <a href="{{ route('customer.product', $product->slug) }}" class="d-block">
                                                 <img
@@ -178,7 +178,7 @@
                                                @endif
                                             </div>
                                         </div>
-                                        <div class="p-md-3 p-2 text-left">
+                                        <div class="p-md-3 p-2 text-left box_new">
                                             <div class="fs-15">
                                                 <span class="fw-700 text-primary">{{ single_price($product->unit_price) }}</span>
                                             </div>

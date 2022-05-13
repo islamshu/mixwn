@@ -202,7 +202,7 @@
                         @endphp
                         @foreach ($products as $key => $product)
                         <div class="carousel-box">
-                            <div class="aiz-card-box border border-light rounded hov-shadow-md my-2 has-transition">
+                            <div class="aiz-card-box box_neww borderr border-lightt rounded hov-shadow-md my-2 has-transition">
                                 <div class="position-relative">
                                     <a href="{{ route('customer.product', $product->slug) }}" class="d-block">
                                         <img
@@ -221,7 +221,7 @@
                                        @endif
                                     </div>
                                 </div>
-                                <div class="p-md-3 p-2 text-left">
+                                <div class="p-md-3 p-2 text-left box_new">
                                     <div class="fs-15 mb-1">
                                         <span class="fw-700 text-primary">{{ single_price($product->unit_price) }}</span>
                                     </div>

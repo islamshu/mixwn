@@ -19,7 +19,7 @@
             <div class="aiz-carousel gutters-10 half-outside-arrow" data-items="6" data-xl-items="5" data-lg-items="4"  data-md-items="3" data-sm-items="2" data-xs-items="2" data-arrows='true' data-infinite='true'>
                 @foreach (filter_products(\App\Product::where('category_id',$category->id )->orderBy('num_of_sale', 'desc'))->limit(12)->get() as $key => $product)
                     <div class="carousel-box">
-                        <div class="aiz-card-box border border-light rounded hov-shadow-md my-2 has-transition">
+                        <div class="aiz-card-box box_neww borderr border-lightt rounded hov-shadow-md my-2 has-transition">
                             <div class="position-relative">
                                 <a href="{{ route('product', $product->slug) }}" class="d-block">
                                     <img
@@ -42,7 +42,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="p-md-3 p-2 text-left">
+                            <div class="p-md-3 p-2 text-left box_new">
                                 <div class="fs-15">
                                     @if(home_base_price($product->id) != home_discounted_base_price($product->id))
                                         <del class="fw-600 opacity-50 mr-1">{{ home_base_price($product->id) }}</del>

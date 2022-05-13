@@ -66,24 +66,7 @@
         </div>
     </div>
     @endif
-    @if (get_setting('home_banner2_images') != null)
-    <div class="mb-4">
-        <div class="container">
-            <div class="row gutters-10">
-                @php $banner_2_imags = json_decode(get_setting('home_banner2_images')); @endphp
-                @foreach ($banner_2_imags as $key => $value)
-                    <div class="col-xl col-md-6">
-                        <div class="mb-3 mb-lg-0 newnew" >
-                            <a href="{{ json_decode(get_setting('home_banner2_links'), true)[$key] }}" class="d-block text-reset">
-                                <img style="width: 100% !important;height: 200px !important;"  src="{{ static_asset('assets/img/placeholder-rect.jpg') }}" data-src="{{ uploaded_asset($banner_2_imags[$key]) }}" alt="{{ env('APP_NAME') }} promo" class="img-fluid lazyload">
-                            </a>
-                        </div>
-                    </div>
-                @endforeach
-            </div>
-        </div>
-    </div>
-    @endif
+  
 
 
     {{-- Flash Deal --}}
@@ -110,7 +93,7 @@
                         @endphp
                         @if ($product != null && $product->published != 0)
                             <div class="carousel-box">
-                                <div class="aiz-card-box border border-light rounded hov-shadow-md my-2 has-transition">
+                                <div class="aiz-card-box box_neww borderr border-lightt rounded hov-shadow-md my-2 has-transition">
                                     <div class="position-relative">
                                         <a href="{{ route('product', $product->slug) }}" class="d-block">
                                             <img
@@ -133,7 +116,7 @@
                                             </a>
                                         </div>
                                     </div>
-                                    <div class="p-md-3 p-2 text-left">
+                                    <div class="p-md-3 p-2 text-left box_new">
                                         <div class="fs-15">
                                             @if(home_base_price($product->id) != home_discounted_base_price($product->id))
                                                 <del class="fw-600 opacity-50 mr-1">{{ home_base_price($product->id) }}</del>
@@ -162,6 +145,7 @@
         </div>
     </section>
     @endif
+  
 
 
     {{-- Featured Section --}}
@@ -173,6 +157,24 @@
     <div id="section_best_selling">
 
     </div>
+    @if (get_setting('home_banner2_images') != null)
+    <div class="mb-4">
+        <div class="container">
+            <div class="row gutters-10">
+                @php $banner_2_imags = json_decode(get_setting('home_banner2_images')); @endphp
+                @foreach ($banner_2_imags as $key => $value)
+                    <div class="col-xl col-md-6">
+                        <div class="mb-3 mb-lg-0 newnew" >
+                            <a href="{{ json_decode(get_setting('home_banner2_links'), true)[$key] }}" class="d-block text-reset">
+                                <img style="width: 100% !important;height: 200px !important;"  src="{{ static_asset('assets/img/placeholder-rect.jpg') }}" data-src="{{ uploaded_asset($banner_2_imags[$key]) }}" alt="{{ env('APP_NAME') }} promo" class="img-fluid lazyload">
+                            </a>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    </div>
+    @endif
     <div id="section_best_cateogries">
 
     </div>
@@ -204,7 +206,7 @@
                            <div class="aiz-carousel gutters-10 half-outside-arrow" data-items="6" data-xl-items="5" data-lg-items="4"  data-md-items="3" data-sm-items="2" data-xs-items="2" data-arrows='true' data-infinite='true'>
                                @foreach ($classified_products as $key => $classified_product)
                                    <div class="carousel-box">
-                                        <div class="aiz-card-box border border-light rounded hov-shadow-md my-2 has-transition">
+                                        <div class="aiz-card-box box_neww borderr border-lightt rounded hov-shadow-md my-2 has-transition">
                                             <div class="position-relative">
                                                 <a href="{{ route('customer.product', $classified_product->slug) }}" class="d-block">
                                                     <img
@@ -223,7 +225,7 @@
                                                     @endif
                                                 </div>
                                             </div>
-                                            <div class="p-md-3 p-2 text-left">
+                                            <div class="p-md-3 p-2 text-left box_new">
                                                 <div class="fs-15 mb-1">
                                                     <span class="fw-700 text-primary">{{ single_price($classified_product->unit_price) }}</span>
                                                 </div>

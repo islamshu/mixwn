@@ -25,7 +25,7 @@
                         @endphp
                         @if ($product->published != 0)
                             <div class="col mb-2">
-                                <div class="aiz-card-box border border-light rounded shadow-sm hov-shadow-md h-100 has-transition bg-white">
+                                <div class="aiz-card-box box_neww borderr border-lightt rounded shadow-sm hov-shadow-md h-100 has-transition bg-white">
                                     <div class="position-relative">
                                         <a href="{{ route('product', $product->slug) }}" class="d-block">
                                             <img
@@ -48,7 +48,7 @@
                                             </a>
                                         </div>
                                     </div>
-                                    <div class="p-md-3 p-2 text-left">
+                                    <div class="p-md-3 p-2 text-left box_new">
                                         <div class="fs-15">
                                             @if(home_base_price($product->id) != home_discounted_base_price($product->id))
                                                 <del class="fw-600 opacity-50 mr-1">{{ home_base_price($product->id) }}</del>

@@ -267,7 +267,7 @@
                         <div class="row gutters-5 row-cols-xxl-4 row-cols-xl-3 row-cols-lg-4 row-cols-md-3 row-cols-2">
                             @foreach ($products as $key => $product)
                                 <div class="col mb-3">
-                                    <div class="aiz-card-box h-100 border border-light rounded shadow-sm hov-shadow-md has-transition bg-white">
+                                    <div class="aiz-card-box box_new h-100 border border-light rounded shadow-sm hov-shadow-md has-transition bg-white">
                                         <div class="position-relative">
                                             <a href="{{ route('product', $product->slug) }}" class="d-block">
                                                 <img
@@ -290,7 +290,7 @@
                                                 </a>
                                             </div>
                                         </div>
-                                        <div class="p-md-3 p-2 text-left">
+                                        <div class="p-md-3 p-2 text-left box_new">
                                             <div class="fs-15">
                                                 @if(home_base_price($product->id) != home_discounted_base_price($product->id))
                                                     <del class="fw-600 opacity-50 mr-1">{{ home_base_price($product->id) }}</del>

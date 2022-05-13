@@ -288,7 +288,7 @@ fixed-bottom 1030*/
 
 .absolute-top-right {
     position: absolute;
-    top: 0;
+    top: 40px;
     right: 0;
 }
 
@@ -6995,7 +6995,7 @@ input[type="number"] {
 .aiz-main-wrapper {
     min-height: 100vh;
     max-width: 100vw;
-    background-color: #D2973D;
+    background-color: #310062;
 }
 .aiz-titlebar h1,
 .aiz-titlebar .title {
@@ -7461,7 +7461,7 @@ input[type="number"] {
 .aiz-card-box {
     overflow: hidden;
 }
-.aiz-card-box:hover .aiz-p-hov-icon a {
+.aiz-card-box :hover .aiz-p-hov-icon a {
     transform: translateX(0);
     -webkit-transform: translateX(0);
 }
@@ -10509,7 +10509,7 @@ ul.social.colored [class*="linkedin"] {
     line-height: 30px;
 }
 .bg-white {
-    background-color: #000 !important;
+    background-color: #310062 !important;
 }
 a {
     color: #D2973D !important;
@@ -10762,7 +10762,7 @@ fixed-bottom 1030*/
 }
 .absolute-top-right {
     position: absolute;
-    top: 0;
+    top: 40px;
     right: 0;
 }
 [dir="rtl"] .absolute-top-right {
@@ -16387,7 +16387,7 @@ input[type="number"] {
 .aiz-main-wrapper {
     min-height: 100vh;
     max-width: 100vw;
-    background-color: #D2973D;
+    background-color: #310062;
 }
 .aiz-titlebar h1,
 .aiz-titlebar .title {
@@ -16827,10 +16827,10 @@ input[type="number"] {
     line-height: 32px;
     border-radius: 50%;
     text-align: center;
-    background: #fff;
+    background: #b2b2b2;
     margin-top: 5px;
     margin-right: 5px;
-    color: #333;
+    color: #310062;
     font-size: 15px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
     0 3px 8px rgba(0, 0, 0, 0.12);
@@ -16857,7 +16857,7 @@ input[type="number"] {
 .aiz-card-box {
     overflow: hidden;
 }
-.aiz-card-box:hover .aiz-p-hov-icon a {
+.aiz-card-box :hover .aiz-p-hov-icon a {
     transform: translateX(0);
     -webkit-transform: translateX(0);
 }
@@ -19890,7 +19890,7 @@ ul.social.colored [class*="linkedin"] {
     line-height: 30px;
 }
 .bg-white {
-    background-color: #000 !important;
+    background-color: #310062 !important;
 }
 a {
     color: #D2973D !important;
@@ -19910,7 +19910,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #00000080;
+    background: #ff242480;
     overflow: hidden;
     border-radius: 20px;
 }
@@ -19951,4 +19951,40 @@ h1 {
     background:#000;
     color: #D2973D !important;
 }
-00
+.box_new {
+    margin-top:5%;
+    text-align:center !important;
+    display:table;
+    width: 100%;
+    border-radius:5% !important;
+    color:#444;
+    background: -webkit-linear-gradient(left, #dddddd 70%, transparent 70%),
+    -webkit-linear-gradient(left, #dddddd 70%, transparent 70%),
+    -webkit-linear-gradient(top, #dddddd 70%, transparent 70%),
+    -webkit-linear-gradient(top, #dddddd 70%, transparent 70%);
+}
+.box_new {
+    background-size: 12px 2px,
+    12px 2px,
+    2px 12px,
+    2px 12px;
+    background-repeat: repeat-x,
+    repeat-x,
+    repeat-y,
+    repeat-y;
+    background-position: 0 0,
+    left bottom,
+    0 0,
+    right 0;
+}
+.box_new:hover {
+    animation:move 10s linear infinite;
+}
+@keyframes move {
+    0% {
+        background-position: 0 0, left bottom, 0 0, right 0;
+    }
+    100% {
+        background-position: 1000px 0, -1000px bottom, 0 -1000px, right 1000px;
+    }
+}
