@@ -407,7 +407,7 @@
                                         <div class="col-5">
                                             <a href="{{ route('product', $top_product->slug) }}" class="d-block text-reset">
                                                 <img
-                                                    class="img-fit lazyload h-110px"
+                                                    class="img-fit lazyload border h-110px"
                                                     src="{{ static_asset('assets/img/placeholder.jpg') }}"
                                                     data-src="{{ uploaded_asset($top_product->thumbnail_img) }}"
                                                     alt="{{ $top_product->getTranslation('name') }}"
@@ -614,7 +614,7 @@
                                         <div class="">
                                             <a href="{{ route('product', $related_product->slug) }}" class="d-block">
                                                 <img
-                                                    class="img-fit lazyload mx-auto h-140px h-md-210px"
+                                                    class="img-fit lazyload border mx-auto h-140px h-md-210px"
                                                     src="{{ static_asset('assets/img/placeholder.jpg') }}"
                                                     data-src="{{ uploaded_asset($related_product->thumbnail_img) }}"
                                                     alt="{{ $related_product->getTranslation('name') }}"

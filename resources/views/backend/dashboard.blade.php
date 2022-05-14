@@ -137,7 +137,7 @@
                         <div class="position-relative">
                             <a href="{{ route('product', $product->slug) }}" class="d-block">
                                 <img
-                                    class="img-fit lazyload mx-auto h-210px"
+                                    class="img-fit lazyload border mx-auto h-210px"
                                     src="{{ static_asset('assets/img/placeholder.jpg') }}"
                                     data-src="{{ uploaded_asset($product->thumbnail_img) }}"
                                     alt="{{  $product->getTranslation('name')  }}"

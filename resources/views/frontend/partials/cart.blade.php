@@ -31,7 +31,7 @@
                                     <img
                                         src="{{ static_asset('assets/img/placeholder.jpg') }}"
                                         data-src="{{ uploaded_asset($product->thumbnail_img) }}"
-                                        class="img-fit lazyload size-60px rounded"
+                                        class="img-fit lazyload border size-60px rounded"
                                         alt="{{  $product->getTranslation('name')  }}"
                                     >
                                     <span class="minw-0 pl-2 flex-grow-1">
