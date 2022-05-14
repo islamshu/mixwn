@@ -19963,11 +19963,11 @@ h1 {
     border-radius: 20px;
 }
 .border_nav:hover {
-    background:#black;
+    background:black;
 }
 .font_color {
-    color:black;
+    color:black !important;
 }
 .font_color:hover {
-    color:D2973D;
+    color:#D2973D !important;
 }
