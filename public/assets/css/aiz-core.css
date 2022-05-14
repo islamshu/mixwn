@@ -19960,4 +19960,8 @@ h1 {
 }
 .border_nav {
     background:#000;
+    border-radius: 20px;
+}
+.border_nav:hover {
+    background:#111723;
 }
