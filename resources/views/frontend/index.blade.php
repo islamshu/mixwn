@@ -57,7 +57,7 @@
                     <div class="col-xl col-md-6 ">
                         <div class="mb-3 mb-lg-0 newnew" >
                             <a  style="text-align: center"    href="{{ json_decode(get_setting('home_banner1_links'), true)[$key] }}" class="d-block text-reset">
-                                <img style="width: 70% !important;border-radius:60%height: 180px !important;" src="{{ static_asset('assets/img/placeholder-rect.jpg') }}" data-src="{{ uploaded_asset($banner_1_imags[$key]) }}" alt="{{ env('APP_NAME') }} promo" class="img-fluid lazyload">
+                                <img style="width: 70% !important;border-radius:60%;height: 180px !important;" src="{{ static_asset('assets/img/placeholder-rect.jpg') }}" data-src="{{ uploaded_asset($banner_1_imags[$key]) }}" alt="{{ env('APP_NAME') }} promo" class="img-fluid lazyload">
                             </a>
                         </div>
                     </div>
@@ -166,7 +166,7 @@
                     <div class="col-xl col-md-6">
                         <div class="mb-3 mb-lg-0 newnew" >
                             <a style="text-align: center"  style="text-align: center"  href="{{ json_decode(get_setting('home_banner2_links'), true)[$key] }}" class="d-block text-reset">
-                                <img style="width: 70% !important;border-radius:60%height: 180px !important;"  src="{{ static_asset('assets/img/placeholder-rect.jpg') }}" data-src="{{ uploaded_asset($banner_2_imags[$key]) }}" alt="{{ env('APP_NAME') }} promo" class="img-fluid lazyload">
+                                <img style="width: 70% !important;border-radius:60%;;height: 180px !important;"  src="{{ static_asset('assets/img/placeholder-rect.jpg') }}" data-src="{{ uploaded_asset($banner_2_imags[$key]) }}" alt="{{ env('APP_NAME') }} promo" class="img-fluid lazyload">
                             </a>
                         </div>
                     </div>
@@ -253,7 +253,7 @@
                     <div class="col-xl col-md-6">
                         <div class="mb-3 mb-lg-0 borderr " style="border: 2px solid red;">
                             <a style="text-align: center"  style="text-align: center"  href="{{ json_decode(get_setting('home_banner3_links'), true)[$key] }}" class="d-block text-reset">
-                                <img style="width: 70% !important;border-radius:60%height: 180px !important;"  src="{{ static_asset('assets/img/placeholder-rect.jpg') }}" data-src="{{ uploaded_asset($banner_3_imags[$key]) }}" alt="{{ env('APP_NAME') }} promo" class="img-fluid lazyload">
+                                <img style="width: 70% !important;border-radius:60%;height: 180px !important;"  src="{{ static_asset('assets/img/placeholder-rect.jpg') }}" data-src="{{ uploaded_asset($banner_3_imags[$key]) }}" alt="{{ env('APP_NAME') }} promo" class="img-fluid lazyload">
                             </a>
                         </div>
                     </div>
